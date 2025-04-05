@@ -45,7 +45,7 @@ useEffect(() => {
             </h1>
             </main>
 
-      <SearchBar/>
+      <SearchBar onSearch={setCharacters} />
       {loading && <p className=" animate-pulse text-2xl mt-8">Загрузка...</p>}
       {error && <p className="text-red-500">{error}</p>}
       <CharacterList characters={characters} loading={loading} />
